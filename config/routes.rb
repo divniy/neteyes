@@ -1,4 +1,6 @@
 Neteyes::Application.routes.draw do
+  match 'project' => 'project#index'
+
   resources :desks
 
   #get "pages/welcome"
