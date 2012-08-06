@@ -1,0 +1,25 @@
+%h1 Listing desks
+
+%table
+  %tr
+    %th Title
+    %th Options
+    %th State
+    %th User
+    %th
+    %th
+    %th
+
+  - @desks.each do |desk|
+    %tr
+      %td= desk.title
+      %td= desk.options
+      %td= desk.state
+      %td= desk.user
+      %td= link_to 'Show', desk
+      %td= link_to 'Edit', edit_desk_path(desk)
+      %td= link_to 'Destroy', desk, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Desk', new_desk_path

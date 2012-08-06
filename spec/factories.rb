@@ -6,7 +6,5 @@ FactoryGirl.define do
   factory :desk do
     title Faker::Lorem.sentence 5
     options
-    state :normal
-    user_id 1
   end
 end

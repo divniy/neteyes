@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @desk.title
+%p
+  %b Options:
+  = @desk.options
+%p
+  %b State:
+  = @desk.state
+%p
+  %b User:
+  = @desk.user
+
+= link_to 'Edit', edit_desk_path(@desk)
+\|
+= link_to 'Back', desks_path
