@@ -1,4 +1,6 @@
 Neteyes::Application.routes.draw do
+  resources :desks
+
   #get "pages/welcome"
 
   # The priority is based upon order of creation:
