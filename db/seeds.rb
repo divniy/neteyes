@@ -6,8 +6,4 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-require "factory_girl"
-require "ffaker"
-Rake::Task['db:reset'].invoke
 
-FactoryGirl.create_list(:desk, 4)
